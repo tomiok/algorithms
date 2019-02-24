@@ -1,7 +1,7 @@
-public class ReverseLinkedList {
+public class PrintReversedLinkedList {
 
     public static void main(final String[] args) {
-        final ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        final PrintReversedLinkedList printReversedLinkedList = new PrintReversedLinkedList();
     }
 
     /**
