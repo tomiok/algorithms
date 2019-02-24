@@ -10,13 +10,19 @@ public class ReverseLinkedLinkedList {
      * @param node The linked list to revert.
      * @return The linked list reverted.
      */
-    SinglyLinkedListNode reverse(final SinglyLinkedListNode node) {
+    private SinglyLinkedListNode reverse(final SinglyLinkedListNode node) {
+        //Get the first element and put in the new linked list
         SinglyLinkedListNode result = new SinglyLinkedListNode(node.data);
+        //Get a new linkedlist to iterate
         SinglyLinkedListNode _node = node.next;
         while (_node != null) {
+            //save the result "of the nex element" in a node
             final SinglyLinkedListNode res = new SinglyLinkedListNode(_node.data);
+            //put the element at the beginning
             res.next = result;
+            //go thru next element
             _node = _node.next;
+            //swap the results
             result = res;
         }
         return result;
