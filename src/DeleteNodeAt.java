@@ -12,6 +12,22 @@ public class DeleteNodeAt {
      * @return The linked list with the node deleted.
      */
     private SinglyLinkedListNode deleteNode(final SinglyLinkedListNode llist, final int position) {
+        if (position == 0) {
+            return llist.next;
+        }
+
+        int i = 1;
+        SinglyLinkedListNode node = llist;
+
+        while (node != null) {
+            if (i == position) {
+                node.next = node.next.next;
+                i++;
+            } else {
+                i++;
+                node = node.next;
+            }
+        }
 
         return llist;
     }
