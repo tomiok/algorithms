@@ -1,12 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Stack;
 
 public class BalancedParenthesis {
 
   public static void main(String[] args) {
     BalancedParenthesis balanced = new BalancedParenthesis();
-    boolean res = balanced.isBalanced("{{{}}}()()(]");
+    boolean res = balanced.isBalanced_2("{{{}}}()()()");
     System.out.println(res);
   }
 
@@ -46,7 +47,25 @@ public class BalancedParenthesis {
   }
 
   private boolean isBalanced_2(String s) {
+    Stack<Character> stack = new Stack<>();
 
-    return false;
+    for (char c: s.toCharArray()) {
+      if (!stack.empty() && isClosing(c)) {
+        if ((stack.peek() - c ) != -1 || (stack.peek() - c ) != -2) {
+          stack.pop();
+        }else {
+          return false;
+        }
+
+      } else {
+        stack.add(c);
+      }
+    }
+
+    return stack.isEmpty();
+  }
+
+  private boolean isClosing(char c) {
+    return c == '}'  || c == ']' || c == ')';
   }
 }
