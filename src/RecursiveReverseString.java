@@ -13,6 +13,6 @@ public class RecursiveReverseString {
 
     index++;
     reverse(s, index);
-    System.out.print(s[index-1]);
+    System.out.print(s[index - 1]);
   }
 }

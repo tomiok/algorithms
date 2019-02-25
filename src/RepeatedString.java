@@ -81,6 +81,6 @@ public class RepeatedString {
       j++;
     }
     long laps = length / Integer.toUnsignedLong(s.length());
-    return ( sum  * laps) + restLetter;
+    return (sum * laps) + restLetter;
   }
 }

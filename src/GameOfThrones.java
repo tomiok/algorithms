@@ -16,7 +16,7 @@ public class GameOfThrones {
     s.chars().forEach(c -> holder[c - 97]++);
 
     int check = 0;
-    for (int i = 0; i< holder.length; i++) {
+    for (int i = 0; i < holder.length; i++) {
       if (even && holder[i] % 2 != 0) {
         return no;
       } else {

@@ -46,10 +46,10 @@ public class SequenceEquation {
     Map<Integer, Integer> m = new HashMap<>();
     int[] arr = new int[p.length];
     for (int i = 0; i <= p.length - 1; i++) {
-      m.put(p[i], i +1);
+      m.put(p[i], i + 1);
     }
     for (int i = 1; i <= p.length; i++) {
-      arr[i-1] = m.get(m.get(i));
+      arr[i - 1] = m.get(m.get(i));
     }
     return arr;
   }
