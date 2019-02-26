@@ -22,7 +22,7 @@ public class StringCompression {
         chars.clear();
         chars.add(c);
       }
-    }
+    }               // Get the last chars in the stack
     return result + chars.peek() + chars.size();
   }
 
