@@ -46,7 +46,7 @@ class SinglyLinkedListNode {
   int data;
   SinglyLinkedListNode next;
 
-  public SinglyLinkedListNode(final int data) {
+  SinglyLinkedListNode(final int data) {
     this.data = data;
   }
 }
