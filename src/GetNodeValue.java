@@ -6,6 +6,9 @@ public class GetNodeValue {
     System.out.println(res);
   }
 
+  /**
+   * <a href="https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem">link</a>
+   */
   private int getNodeValue(SinglyLinkedListNode node, int pos) {
     SinglyLinkedListNode pointer = node;
     int pointerPosition = 0;
