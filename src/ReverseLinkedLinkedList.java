@@ -2,6 +2,9 @@ public class ReverseLinkedLinkedList {
 
   public static void main(final String[] args) {
     final ReverseLinkedLinkedList l = new ReverseLinkedLinkedList();
+    SinglyLinkedListNode node = Commons.list(1,2,3,4,5,6,7);
+    SinglyLinkedListNode result = l.reverse(node);
+    System.out.println(result);
   }
 
   /**
