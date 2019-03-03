@@ -37,8 +37,6 @@ public class InsertAtTail {
 
     return llist;
   }
-
-
 }
 
 class SinglyLinkedListNode {
