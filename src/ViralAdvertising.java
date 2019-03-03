@@ -12,7 +12,6 @@ public class ViralAdvertising {
    * <a href= https://www.hackerrank.com/challenges/strange-advertising/problem>link</a>
    *
    * @param numOfDays the number of days of the Ad.
-   *
    * @return the number of people who saw the Ad.
    */
   private int peopleWhoSeeTheAd(int numOfDays) {

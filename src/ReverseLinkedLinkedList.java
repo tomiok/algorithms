@@ -8,7 +8,6 @@ public class ReverseLinkedLinkedList {
    * <a href="https://www.hackerrank.com/challenges/reverse-a-linked-list/problem">link</a>
    *
    * @param node The linked list to revert.
-   *
    * @return The linked list reverted.
    */
   private SinglyLinkedListNode reverse(final SinglyLinkedListNode node) {

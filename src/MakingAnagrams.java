@@ -12,7 +12,6 @@ public class MakingAnagrams {
    *
    * @param s1 The first String
    * @param s2 The second String
-   *
    * @return The number of deletion to get the anagram
    */
   private int makeAnagram(String s1, String s2) {

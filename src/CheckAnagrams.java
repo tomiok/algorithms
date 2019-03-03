@@ -10,7 +10,6 @@ public class CheckAnagrams {
   /**
    * @param s1 The first String
    * @param s2 The second String
-   *
    * @return True if it is an anagram, otherwise false.
    */
   private boolean checkIfAnagram(String s1, String s2) {

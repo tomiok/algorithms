@@ -5,7 +5,7 @@ public class SequenceEquation {
 
   public static void main(String[] args) {
     SequenceEquation s = new SequenceEquation();
-    int[] arr = { 2, 3, 1 };
+    int[] arr = {2, 3, 1};
     //int[] res = s.permutation(arr);
     int[] res = s.permutation_2(arr);
 
@@ -19,7 +19,6 @@ public class SequenceEquation {
    * <a href="https://www.hackerrank.com/challenges/permutation-equation/problem">link</a>
    *
    * @param p The sequence.
-   *
    * @return The permutation.
    */
   private int[] permutation(int[] p) {

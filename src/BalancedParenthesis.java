@@ -49,11 +49,11 @@ public class BalancedParenthesis {
   private boolean isBalanced_2(String s) {
     Stack<Character> stack = new Stack<>();
 
-    for (char c: s.toCharArray()) {
+    for (char c : s.toCharArray()) {
       if (!stack.empty() && isClosing(c)) {
-        if ((stack.peek() - c ) != -1 || (stack.peek() - c ) != -2) {
+        if ((stack.peek() - c) != -1 || (stack.peek() - c) != -2) {
           stack.pop();
-        }else {
+        } else {
           return false;
         }
 
@@ -66,6 +66,6 @@ public class BalancedParenthesis {
   }
 
   private boolean isClosing(char c) {
-    return c == '}'  || c == ']' || c == ')';
+    return c == '}' || c == ']' || c == ')';
   }
 }

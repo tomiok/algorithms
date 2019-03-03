@@ -10,8 +10,8 @@ public class ContainedWords {
   }
 
   /**
-   * Given 2 sentences, determine if one has enough words to complete the other
-   * Assuming s1 is always longer than s2
+   * Given 2 sentences, determine if one has enough words to complete the other Assuming s1 is
+   * always longer than s2
    */
   private boolean areContained(String s1, String s2) {
     String[] ss1 = s1.split(" ");
@@ -19,7 +19,7 @@ public class ContainedWords {
 
     Map<String, Integer> holder = putInMap(ss1);
 
-    for (String s: ss2) {
+    for (String s : ss2) {
       if (!holder.containsKey(s)) {
         return false;
       }
@@ -32,7 +32,7 @@ public class ContainedWords {
 
     for (String str : s) {
       if (holder.containsKey(str)) {
-        holder.compute(str, (k,v) -> v = v+1);
+        holder.compute(str, (k, v) -> v = v + 1);
       } else {
         holder.put(str, 1);
       }

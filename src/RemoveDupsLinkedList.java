@@ -7,13 +7,13 @@ public class RemoveDupsLinkedList {
 
   public static void main(String[] args) {
     RemoveDupsLinkedList r = new RemoveDupsLinkedList();
-    SinglyLinkedListNode node = r.list(1,2,3,4,5);
+    SinglyLinkedListNode node = r.list(1, 2, 3, 4, 5);
     r.removeDuplicates(node);
     System.out.println(node);
-    SinglyLinkedListNode repeated = r.list(1,2,3,3,5);
+    SinglyLinkedListNode repeated = r.list(1, 2, 3, 3, 5);
     r.removeDuplicates(repeated);
     System.out.println(repeated);
-    SinglyLinkedListNode repeated2 = r.list(1,2,3,3,5,5);
+    SinglyLinkedListNode repeated2 = r.list(1, 2, 3, 3, 5, 5);
     r.removeDuplicates(repeated2);
     System.out.println(repeated2);
   }
