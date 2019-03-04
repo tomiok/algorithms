@@ -10,6 +10,12 @@ public class SockMerchant {
     System.out.println(res);
   }
 
+  /**
+   * <a href="https://www.hackerrank.com/challenges/sock-merchant/problem">linl</a>
+   * @param n Number of sockets.
+   * @param colours The colours.
+   * @return Number of pairs.
+   */
   private int sock(int n, int[] colours) {
     Set<Integer> s = new HashSet<>(n);
     int c = 0;
