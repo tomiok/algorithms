@@ -1,9 +1,9 @@
 public class ArrayRotation {
 
   public static void main(String[] args) {
-    System.out.println(4%2);
-    System.out.println(5%7);
-    System.out.println(6%7);
+    System.out.println(4 % 2);
+    System.out.println(5 % 7);
+    System.out.println(6 % 7);
 
     ArrayRotation rotation = new ArrayRotation();
     int[] arr = {1, 2, 3, 4, 5};
@@ -20,6 +20,15 @@ public class ArrayRotation {
   }
 
   private int formula(int position, int shift, int length) {
+    if (position < shift) {
+      int n = Math.abs(position - shift);
+      return Math.abs(n - length);
+    } else {
+      return position - shift;
+    }
+  }
+
+  private int formula_2(int position, int shift, int length) {
     if (position < shift) {
       int n = Math.abs(position - shift);
       return Math.abs(n - length);
