@@ -29,10 +29,19 @@ public class ArrayRotation {
 
   private static int formula_2(int position, int shift, int length) {
     if (position < shift) {
-      int k =  position - (shift % length);
+      int k = position - (shift % length);
       return k < 0 ? k + length : k;
     } else {
       return position - shift;
+    }
+  }
+
+  //Right rotation
+  private static int rightRotationFormula(int position, int shift, int length) {
+    if ((shift + position) > length) {
+      return (position + shift) % length;
+    } else {
+      return position + shift;
     }
   }
 }
