@@ -10,6 +10,9 @@ public class ArrayRotation {
     }
   }
 
+  /**
+   * <a href="https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem">link</a>
+   */
   private int[] rotate(int[] arr, int n) {
     int[] nArr = new int[arr.length];
     for (int t = 0; t < arr.length; t++) {
