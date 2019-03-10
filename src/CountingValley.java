@@ -1,9 +1,7 @@
-import java.util.Stack;
-
 public class CountingValley {
 
-  public static void main(String[] args) {
-    CountingValley cv = new CountingValley();
+  public static void main(final String[] args) {
+    final CountingValley cv = new CountingValley();
   }
 
   /**
@@ -13,16 +11,16 @@ public class CountingValley {
    * @param moves [D,U] Down, Up
    * @return Num of valleys, a valley is a below-sea-level place. Starting at sea level.
    */
-  private int count(int steps, String moves) {
+  private int count(final int steps, final String moves) {
     int v = 0;     // # of valleys
     int lvl = 0;   // current level
-    for(char c : moves.toCharArray()){
-      if(c == 'U') ++lvl;
-      if(c == 'D') --lvl;
+    for (final char c : moves.toCharArray()) {
+      if (c == 'U') lvl++;
+      if (c == 'D') lvl--;
 
       // if we just came UP to sea level
-      if(lvl == 0 && c == 'U')
-        ++v;
+      if (lvl == 0 && c == 'U')
+        v++;
     }
     return v;
   }
