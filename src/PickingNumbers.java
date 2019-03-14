@@ -12,7 +12,7 @@ public class PickingNumbers {
   /**
    * <a href="https://www.hackerrank.com/challenges/picking-numbers/problem">link</a>
    */
-  public static int pickingNumbers(final List<Integer> a) {
+  private static int pickingNumbers(final List<Integer> a) {
     final List<Integer> b = new ArrayList<>(a);
     return a.stream().distinct().map(
         n -> (int) b.stream().filter(r -> r.equals(n) || r.equals(n - 1)).count())
