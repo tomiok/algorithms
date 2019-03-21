@@ -7,13 +7,14 @@ public class InsertAtPosition {
   /**
    * <a href="https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem">link</a>
    *
-   * @param llist The linked list
-   * @param data The data to insert
+   * @param llist    The linked list
+   * @param data     The data to insert
    * @param position The position to insert the data
+   *
    * @return The modified list.
    */
   SinglyLinkedListNode insertAt(final SinglyLinkedListNode llist, final int data,
-      final int position) {
+                                final int position) {
     SinglyLinkedListNode node = llist;
     int i = 1;
     while (node != null) {

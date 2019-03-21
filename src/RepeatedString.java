@@ -49,7 +49,8 @@ public class RepeatedString {
    * <a href="https://www.hackerrank.com/challenges/repeated-string/problem">link</a>
    *
    * @param length The String length
-   * @param s The input String
+   * @param s      The input String
+   *
    * @return The number of occurrences
    */
   private long repeatedString_2(long length, String s) {

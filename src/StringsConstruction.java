@@ -13,6 +13,7 @@ public class StringsConstruction {
    * <a href="https://www.hackerrank.com/challenges/string-construction/problem>link</a>
    *
    * @param s The string to construct
+   *
    * @return The price to pay to construct the String.
    */
   private int stringConstruction(String s) {

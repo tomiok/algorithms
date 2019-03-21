@@ -2,7 +2,7 @@ public class ReverseLinkedLinkedList {
 
   public static void main(final String[] args) {
     final ReverseLinkedLinkedList l = new ReverseLinkedLinkedList();
-    SinglyLinkedListNode node = Commons.list(1,2,3,4,5,6,7);
+    SinglyLinkedListNode node = Commons.list(1, 2, 3, 4, 5, 6, 7);
     SinglyLinkedListNode result = l.reverse(node);
     System.out.println(result);
   }
@@ -11,6 +11,7 @@ public class ReverseLinkedLinkedList {
    * <a href="https://www.hackerrank.com/challenges/reverse-a-linked-list/problem">link</a>
    *
    * @param node The linked list to revert.
+   *
    * @return The linked list reverted.
    */
   private SinglyLinkedListNode reverse(final SinglyLinkedListNode node) {

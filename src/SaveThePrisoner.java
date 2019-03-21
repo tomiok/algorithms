@@ -9,14 +9,15 @@ public class SaveThePrisoner {
    * <a href="https://www.hackerrank.com/challenges/save-the-prisoner/problem">link</a>
    *
    * @param prisoners Num of prisoners.
-   * @param sweets Num of sweets to share, the last one is the poisoned.
-   * @param startAt The position to start giving the sweets, the prisoners are sitting like an array
-   * (1-based)
+   * @param sweets    Num of sweets to share, the last one is the poisoned.
+   * @param startAt   The position to start giving the sweets, the prisoners are sitting like an array
+   *                  (1-based)
+   *
    * @return The poisoned prisoner, the one who received the last candy.
    */
   private static int saveThePrisoner(int prisoners,
-      int sweets,
-      int startAt) {
+                                     int sweets,
+                                     int startAt) {
 
       /*
       it does not matter how many laps the sweets does. The modulo is the last position

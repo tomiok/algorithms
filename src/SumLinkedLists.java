@@ -2,7 +2,7 @@ public class SumLinkedLists {
 
   public static void main(String[] args) {
     SumLinkedLists s = new SumLinkedLists();
-    int result = s.sum(Commons.list(6,1,7), Commons.list(2,9,5));
+    int result = s.sum(Commons.list(6, 1, 7), Commons.list(2, 9, 5));
     System.out.println(result);
   }
 

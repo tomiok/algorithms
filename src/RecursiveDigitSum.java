@@ -14,6 +14,7 @@ public class RecursiveDigitSum {
    *
    * @param n The number in string format
    * @param k The times to be repeated
+   *
    * @return The sum of each digit.
    */
   private int sum(String n, int k) {

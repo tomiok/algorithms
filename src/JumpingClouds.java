@@ -2,7 +2,7 @@ public class JumpingClouds {
 
   public static void main(String[] args) {
     JumpingClouds clouds = new JumpingClouds();
-    int[] arr = {0, 0, 1, 0, 0, 0, 0, 1, 0};
+    int[] arr = { 0, 0, 1, 0, 0, 0, 0, 1, 0 };
     int res = clouds.jump(arr);
     System.out.println(res);
   }
@@ -11,6 +11,7 @@ public class JumpingClouds {
    * <a href="https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem">link</a>
    *
    * @param arr Binary array
+   *
    * @return min num of jumps
    */
   private int jump(int[] arr) {

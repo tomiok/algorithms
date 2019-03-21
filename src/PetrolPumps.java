@@ -3,7 +3,7 @@ public class PetrolPumps {
   public static void main(final String[] args) {
     final PetrolPumps p = new PetrolPumps();
 
-    final int[][] arr = {{1, 5}, {10, 3}, {3, 4}};
+    final int[][] arr = { { 1, 5 }, { 10, 3 }, { 3, 4 } };
     int res = p.truckTour(arr);
     System.out.println(res);
   }

@@ -2,7 +2,7 @@ public class GetValueKthToLast {
 
   public static void main(String[] args) {
     GetValueKthToLast instance = new GetValueKthToLast();
-    SinglyLinkedListNode node = Commons.list(1,2,3,4,5,6,7,8);
+    SinglyLinkedListNode node = Commons.list(1, 2, 3, 4, 5, 6, 7, 8);
     int t = instance.deleteKthToLast(node, 3);
     System.out.println(t);
   }

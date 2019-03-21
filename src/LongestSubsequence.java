@@ -4,7 +4,7 @@ public class LongestSubsequence {
 
   public static void main(String[] args) {
     LongestSubsequence longest = new LongestSubsequence();
-    int[] arr = {1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3};
+    int[] arr = { 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3 };
     int res = longest.longestSequence(arr);
     System.out.println(res);
   }
@@ -13,6 +13,7 @@ public class LongestSubsequence {
    * Get the longest sub sequence of the same int
    *
    * @param arr The input array
+   *
    * @return The number of occurrences int the array.
    */
   private int longestSequence(int[] arr) {
