@@ -3,7 +3,7 @@ public class ReverseLinkedLinkedList {
   public static void main(final String[] args) {
     final ReverseLinkedLinkedList l = new ReverseLinkedLinkedList();
     SinglyLinkedListNode node = Commons.list(1, 2, 3, 4, 5, 6, 7);
-    SinglyLinkedListNode result = l.reverse(node);
+    SinglyLinkedListNode result = l.reverse_2(node);
     System.out.println(result);
   }
 
@@ -30,5 +30,20 @@ public class ReverseLinkedLinkedList {
       result = res;
     }
     return result;
+  }
+
+  private SinglyLinkedListNode reverse_2(SinglyLinkedListNode head) {
+    SinglyLinkedListNode current = head;
+    SinglyLinkedListNode previous = null;
+    SinglyLinkedListNode next = null;
+
+    while (current != null) {
+      next = current.next;
+      current.next = previous;
+      previous = current;
+      current = next;
+    }
+    head = previous;
+    return head;
   }
 }
