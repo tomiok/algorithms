@@ -19,9 +19,13 @@ public class Stack<T extends Comparable<T>> {
   }
 
   public T pop() {
+    if (isEmpty()) {
+      throw new RuntimeException("The stack is empty!");
+    }
     count--;
-    Node<T> toPop = node.getNext();
-    node = toPop;
+
+    Node<T> toPop = node;
+    node = toPop.getNext();
     return toPop.getData();
   }
 

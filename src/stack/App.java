@@ -8,6 +8,12 @@ public class App {
     stack.push(20);
     stack.push(30);
 
-    System.out.println(stack.size());
+    System.out.println("The size is: " + stack.size());
+
+    System.out.println(stack.pop());
+    System.out.println(stack.pop());
+    System.out.println(stack.pop());
+
+    System.out.println("The size is: " + stack.size());
   }
 }
