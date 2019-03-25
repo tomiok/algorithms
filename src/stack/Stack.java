@@ -6,7 +6,7 @@ public class Stack<T extends Comparable<T>> {
 
   private int count;
 
-  private void push(T data) {
+  public void push(T data) {
     count++;
 
     if (isEmpty()) {
@@ -18,18 +18,18 @@ public class Stack<T extends Comparable<T>> {
     }
   }
 
-  private T pop() {
+  public T pop() {
     count--;
     Node<T> toPop = node.getNext();
     node = toPop;
     return toPop.getData();
   }
 
-  private boolean isEmpty() {
+  public boolean isEmpty() {
     return this.node == null;
   }
 
-  private int size() {
+  public int size() {
     return this.count;
   }
 }
