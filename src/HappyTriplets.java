@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class HappyTriplets {
 
   public static void main(String[] args) {
@@ -35,4 +38,18 @@ public class HappyTriplets {
     return count;
   }
 
+  private int beautyTriplets(int d, int[] arr) {
+
+    int count = 0;
+    Set<Integer> s = new HashSet<>();
+    for (int i = 0; i < arr.length; i++) {
+      if (s.contains(arr[i] - d) && s.contains(arr[i] - 2 * d)) {
+        count++;
+      }
+
+      s.add(arr[i]);
+    }
+
+    return count;
+  }
 }
