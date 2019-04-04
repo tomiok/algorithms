@@ -13,7 +13,6 @@ public class MaxProfit {
     int sell = Integer.MIN_VALUE;
     int profit = Integer.MIN_VALUE;
 
-
     for (int i = 0; i < arr.length; i++) {
       if (i+1 <= arr.length-1) {
         buy = arr[i] < buy ? arr[i] : buy;
